@@ -1,4 +1,6 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
+
 export default function Home() {
     
     return (
@@ -16,10 +18,10 @@ export default function Home() {
                             <img src="assets/carousel/carousel1.jpg" className="d-block w-100 h-100" alt="..." />
                         </div>
                         <div className="carousel-item">
-                            <img src="assets/carousel/carousel1.jpg" className="d-block w-100 h-100" alt="..." />
+                           <Link to="/men"> <img src="assets/carousel/carousel2.jpg" className="d-block w-100 h-100" alt="..." /></Link>
                         </div>
                         <div className="carousel-item">
-                            <img src="assets/carousel/carousel1.jpg" className="d-block w-100 h-100" alt="..." />
+                                   <Link to="/kids"> <img src="assets/carousel/carousel4.jpg" className="d-block w-100 h-100" alt="..." /></Link>
                         </div>
                     </div>
                     <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
