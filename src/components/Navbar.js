@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-export default function Navbar() {
+export default function Navbar(props) {
+    console.warn('navbarprops',props)
     return (
         <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -25,7 +26,7 @@ export default function Navbar() {
                       <Link to="/cart">  <button className="btn btn-outline-dark" type="submit">
                             <i className="bi-cart-fill me-1"></i>
                             Cart
-                            <span className="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                            <span className="badge bg-dark text-white ms-1 rounded-pill">{props.cartData.length}</span>
                         </button></Link>
                     </div>
                 </div>

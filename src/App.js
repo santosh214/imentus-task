@@ -1,23 +1,23 @@
 import './App.css';
-import Navbar from './components/Navbar'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import "bootstrap-icons/font/bootstrap-icons.css";
 import {HashRouter as Router,Route } from 'react-router-dom'
 import Home from './components/Home'
-import Men from './components/Men';
+import MenContainer from './containers/MenContainer';
 import Kids from './components/Kids';
-import Cart from './components/Cart';
+import CartContainer from './containers/CartContainer';
+import NavbarContainer from './containers/NavbarContainer';
 function App() {
   return (
     <Router>
     <div className="App">
-      <Navbar />
+      <NavbarContainer />
     </div>
     <Route exact path="/home" component={Home}></Route>
-    <Route exact path="/men" component={Men}></Route>
+    <Route exact path="/men" component={MenContainer}></Route>
     <Route exact path="/kids" component={Kids}></Route>
-    <Route exact path="/cart" component={Cart}></Route>
+    <Route exact path="/cart" component={CartContainer}></Route>
     </Router>
   );
 }

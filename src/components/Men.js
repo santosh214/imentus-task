@@ -1,5 +1,6 @@
 import React from 'react'
-export default function Men() {
+export default function Men(props) {
+    console.warn("menprops",props)
     const men=[
         {company:"MUFTI",price:1700,desc:"Checks Cotton Slim Fit Mens Casual Shirt",img:"assets/men/men1.jpg"},
         {company:"FILA CASUAL",price:809,desc:"Cotton Mens T-Shirt",img:"assets/men/men2.jpg"},
@@ -42,7 +43,7 @@ export default function Men() {
                                 </div>
                                 {/* <!-- Product actions--> */}
                                 <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div className="text-center"><button className="btn btn-outline-dark mt-auto" href="#">Add to cart</button></div>
+                                    <div className="text-center"><button className="btn btn-outline-dark mt-auto" onClick={()=>props.addToCartHandler({img:items.img,desc:items.desc,price:items.price})}>Add to cart</button></div>
                                 </div>
                             </div>
                         </div>
