@@ -10,13 +10,12 @@ export default function Men(props) {
         {company:"LEE COOPER",price:1399,desc:"Mid Tone Cotton Straight Fit Mens Jeans",img:"assets/men/men5.jpg"},
         {company:"SPYKAR",price:1699,desc:"Printed Twill Slim Fit Mens Casual Shirt",img:"assets/men/men6.jpg"},
         {company:"FRATINI",price:1049,desc:"Mens Slim Fit Checks Cutaway Collar Casual Shirt",img:"assets/men/men7.jpg"},
-        {company:"LIFE",price:629,desc:"Solid Linen Cotton Regular Fit Mens Shirt",img:"assets/men/men8.jpg"},
     ]
     return (
         <div>
             {/* <!-- Section--> */}
             <section className="py-1">
-                <div className="container px-4 px-lg-5 mt-5">
+                <div className="container-fluid px-4 px-lg-5 mt-5">
                     <div className="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
      {men.map((items,index)=>
                         <div className="col mb-5" key={index}>
