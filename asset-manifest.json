@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/imentus-task/static/css/main.9f9d0f6c.chunk.css",
+    "main.js": "/imentus-task/static/js/main.cd897c15.chunk.js",
+    "main.js.map": "/imentus-task/static/js/main.cd897c15.chunk.js.map",
+    "runtime-main.js": "/imentus-task/static/js/runtime-main.ac892821.js",
+    "runtime-main.js.map": "/imentus-task/static/js/runtime-main.ac892821.js.map",
+    "static/css/2.d284a7bb.chunk.css": "/imentus-task/static/css/2.d284a7bb.chunk.css",
+    "static/js/2.5649f7d0.chunk.js": "/imentus-task/static/js/2.5649f7d0.chunk.js",
+    "static/js/2.5649f7d0.chunk.js.map": "/imentus-task/static/js/2.5649f7d0.chunk.js.map",
+    "static/js/3.adbfd10c.chunk.js": "/imentus-task/static/js/3.adbfd10c.chunk.js",
+    "static/js/3.adbfd10c.chunk.js.map": "/imentus-task/static/js/3.adbfd10c.chunk.js.map",
+    "index.html": "/imentus-task/index.html",
+    "static/css/2.d284a7bb.chunk.css.map": "/imentus-task/static/css/2.d284a7bb.chunk.css.map",
+    "static/css/main.9f9d0f6c.chunk.css.map": "/imentus-task/static/css/main.9f9d0f6c.chunk.css.map",
+    "static/js/2.5649f7d0.chunk.js.LICENSE.txt": "/imentus-task/static/js/2.5649f7d0.chunk.js.LICENSE.txt",
+    "static/media/bootstrap-icons.css": "/imentus-task/static/media/bootstrap-icons.dfd0ea12.woff2",
+    "static/media/notifications.css": "/imentus-task/static/media/notification.c5d9251e.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ac892821.js",
+    "static/css/2.d284a7bb.chunk.css",
+    "static/js/2.5649f7d0.chunk.js",
+    "static/css/main.9f9d0f6c.chunk.css",
+    "static/js/main.cd897c15.chunk.js"
+  ]
+}
