@@ -1,9 +1,20 @@
 import React from 'react'
+import 'react-notifications/lib/notifications.css';
+import {NotificationContainer, NotificationManager} from 'react-notifications';
+
 
 export default function Cart(props) {
-    console.log("cartprops",props.cartData)
+
+function Notification(){
+    NotificationManager.warning('Remove items in Your cart','Remove')
+}
+
+    console.log("cartprops",props)
     if(props.cartData.length===0){
-        return <h1 className="text-center py-5">No items in Your Cart</h1>
+        return(
+            <div className="mt-5  mx-5 px-5"> <h3 className="text-center alert alert-danger py-5">No items in Your Cart...!</h3>
+        </div>
+        )
     }
     return (
         <div>
@@ -36,9 +47,11 @@ export default function Cart(props) {
                                     </div>
                                 </div>
                                 {/* <!-- Product actions--> */}
-                                <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div className="text-center"><button className="btn btn-outline-dark mt-auto" >Buy Now</button></div>
+                                <div className="card-footer d-flex p-4 pt-0 border-top-0 justify-content-center bg-transparent">
+                                    <div className="text-center"><button className="btn btn-outline-dark btn-sm mx-2" >Buy Now</button></div>
+                                    <div className="text-center"><button className="btn btn-outline-dark btn-sm mx-2" onClick={()=>{props.removeToCartHandler({id:items.cartData.id,img:items.cartData.img,desc:items.cartData.desc,price:items.cartData.price});Notification();}} >Remove To Cart</button></div>
                                 </div>
+                                
                             </div>
                         </div>
 )}
@@ -46,6 +59,7 @@ export default function Cart(props) {
                 </div>
             </section>
         </div>
+        <NotificationContainer />
         </div>
     )
 }

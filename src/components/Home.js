@@ -1,12 +1,14 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import MenContainer from '../containers/MenContainer'
+import Footer from './Footer'
 
 export default function Home() {
     
     return (
         <div>
             {/* <!-- Header--> */}
-            <header className="bg-dark py-5">
+            <header className="bg-dark ">
                 <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
                     <div className="carousel-indicators ">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active bg-dark" aria-current="true" aria-label="Slide 1"></button>
@@ -35,7 +37,8 @@ export default function Home() {
                 </div>
             </header>
             {/* <!-- Section--> */}
-
+            <hr />
+            <MenContainer />
         </div>
     )
 }

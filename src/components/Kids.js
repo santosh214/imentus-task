@@ -1,23 +1,25 @@
 import React from 'react'
-export default function Kids() {
+import Footer from './Footer'
+export default function Kids(props) {
+    console.log("kidsProps",props)
     const kids = [
-        { company: "Mango", price: 100, desc: "Printed Cotton Round Neck Boys T-shirt", img: "assets/kids/kids1.jpg" },
-        { company: "Mango", price: 200, desc: "Printed Cotton Round Neck Girls T-shirt", img: "assets/kids/kids2.jpg" },
-        { company: "Mango", price: 180, desc: "Boys Printed T-shirt Military Style", img: "assets/kids/kids3.jpg" },
-        { company: "Mango", price: 300, desc: "Printed Viscose Regular Girl's Jumpsuit", img: "assets/kids/kids13.jpg" },
-        { company: "Mango", price: 559, desc: "Solid Cotton Blend Girls Casual Dress", img: "assets/kids/kids4.jpg" },
-        { company: "Mango", price: 699, desc: "Solid Cotton Rich Girls Dungarees", img: "assets/kids/kids5.jpg" },
-        { company: "Mango", price: 279, desc: "Boys Printed T-Shirt", img: "assets/kids/kids6.jpg" },
-        { company: "Mango", price: 199, desc: "Printed Cotton Round Neck Girls T-Shirt", img: "assets/kids/kids7.jpg" },
+        {id:'k1',  company: "Mango", price: 100, desc: "Printed Cotton Round Neck Boys T-shirt", img: "assets/kids/kids1.jpg" },
+        {id:'k2', company: "Mango", price: 200, desc: "Printed Cotton Round Neck Girls T-shirt", img: "assets/kids/kids2.jpg" },
+        {id:'k3', company: "Mango", price: 180, desc: "Boys Printed T-shirt Military Style", img: "assets/kids/kids3.jpg" },
+        {id:'k4', company: "Mango", price: 300, desc: "Printed Viscose Regular Girl's Jumpsuit", img: "assets/kids/kids13.jpg" },
+        {id:'k5', company: "Mango", price: 559, desc: "Solid Cotton Blend Girls Casual Dress", img: "assets/kids/kids4.jpg" },
+        {id:'k6', company: "Mango", price: 699, desc: "Solid Cotton Rich Girls Dungarees", img: "assets/kids/kids5.jpg" },
+        {id:'k7', company: "Mango", price: 279, desc: "Boys Printed T-Shirt", img: "assets/kids/kids6.jpg" },
+        {id:'k8', company: "Mango", price: 199, desc: "Printed Cotton Round Neck Girls T-Shirt", img: "assets/kids/kids7.jpg" },
       ]
     return (
         <div>
             {/* <!-- Section--> */}
             <section className="py-1">
                 <div className="container-fluid px-4 px-lg-5 mt-5">
-                    <div className="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <div className="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-5 justify-content-center">
      {kids.map((items,index)=>
-                        <div className="col mb-5" key={index}>
+                        <div className="col mb-5 border-bottom border-danger pb-3" key={index}>
                             <div className="card h-100">
                                 {/* <!-- Sale badge--> */}
                                 {/* <!-- Product image--> */}
@@ -41,7 +43,7 @@ export default function Kids() {
                                 </div>
                                 {/* <!-- Product actions--> */}
                                 <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div className="text-center"><button className="btn btn-outline-dark mt-auto" href="#">Add to cart</button></div>
+                                    <div className="text-center"><button className="btn btn-outline-dark mt-auto btn-sm" onClick={()=>props.addToCartHandler({img:items.img,desc:items.desc,price:items.price,id:items.id})}>Add to cart</button></div>
                                 </div>
                             </div>
                         </div>
@@ -49,6 +51,7 @@ export default function Kids() {
 </div>
                 </div>
             </section>
+            <Footer />
         </div>
     )
 }

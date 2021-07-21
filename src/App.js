@@ -10,6 +10,7 @@ import CartContainer from './containers/CartContainer';
 import NavbarContainer from './containers/NavbarContainer';
 import About from './components/About';
 import ContactUs from './components/ContactUs';
+import KidsContainer from './containers/KidsContainer';
 function App() {
   return (
     <Router>
@@ -17,8 +18,9 @@ function App() {
       <NavbarContainer />
     </div>
     <Route exact path="/home" component={Home}></Route>
+    <Route exact path="/" component={Home}></Route>
     <Route exact path="/men" component={MenContainer}></Route>
-    <Route exact path="/kids" component={Kids}></Route>
+    <Route exact path="/kids" component={KidsContainer}></Route>
     <Route exact path="/cart" component={CartContainer}></Route>
     <Route exact path="/about" component={About}></Route>
     <Route exact path="/contact-us" component={ContactUs}></Route>
