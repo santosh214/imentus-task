@@ -13,6 +13,7 @@ export default function Navbar(props) {
                         <li className="nav-item"><Link className="nav-link "  to="/home">Home</Link></li>
                         <li className="nav-item"><Link className="nav-link "  to="/men">Men</Link></li>
                         <li className="nav-item"><Link className="nav-link "  to="/kids">Kids</Link></li>
+                        <li className="nav-item"><Link className="nav-link "  to="/cart">Cart</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/about">About</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/contact-us">Contact Us</Link></li>
                         {/* <li className="nav-item dropdown">

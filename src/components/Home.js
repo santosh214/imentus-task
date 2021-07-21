@@ -1,7 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import MenContainer from '../containers/MenContainer'
-import Footer from './Footer'
 
 export default function Home() {
     

@@ -4,11 +4,16 @@ import {NotificationContainer, NotificationManager} from 'react-notifications';
 
 
 export default function Cart(props) {
-
+console.warn('acrt',props)
 function Notification(){
     NotificationManager.warning('Remove items in Your cart','Remove')
 }
 
+function Redirect(){
+alert("Thank You For Shopping")
+    console.warn("redirect")
+props.history.push('/home')
+}
     console.log("cartprops",props)
     if(props.cartData.length===0){
         return(
@@ -48,7 +53,7 @@ function Notification(){
                                 </div>
                                 {/* <!-- Product actions--> */}
                                 <div className="card-footer d-flex p-4 pt-0 border-top-0 justify-content-center bg-transparent">
-                                    <div className="text-center"><button className="btn btn-outline-dark btn-sm mx-2" >Buy Now</button></div>
+                                    <div className="text-center"><button className="btn btn-outline-dark btn-sm mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal" >Buy Now</button></div>
                                     <div className="text-center"><button className="btn btn-outline-dark btn-sm mx-2" onClick={()=>{props.removeToCartHandler({id:items.cartData.id,img:items.cartData.img,desc:items.cartData.desc,price:items.cartData.price});Notification();}} >Remove To Cart</button></div>
                                 </div>
                                 
@@ -58,6 +63,67 @@ function Notification(){
 </div>
                 </div>
             </section>
+        </div>
+        {/* //buyNOw MOdel */}
+        <div>
+<div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div className="modal-dialog">
+    <div className="modal-content">
+      <div className="modal-header">
+        <h5 className="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div className="modal-body">
+      <form>
+  <div className="form-row">
+    <div className="form-group col">
+      <label htmlFor="inputEmail4">Email</label>
+      <input type="email" className="form-control" id="inputEmail4" placeholder="Email"/>
+    </div>
+
+  </div>
+  <div className="form-group">
+    <label htmlFor="inputAddress">Address</label>
+    <input type="text" className="form-control" id="inputAddress" placeholder="1234 Main St"/>
+  </div>
+  <div className="form-group">
+    <label htmlFor="inputAddress2">Address 2</label>
+    <input type="text" className="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor"/>
+  </div>
+  <div className="form-row">
+    <div className="form-group col">
+      <label htmlFor="inputCity">City</label>
+      <input type="text" className="form-control" id="inputCity"/>
+    </div>
+    <div className="form-group col-md-4">
+      <label htmlFor="inputState">State</label>
+      <select id="inputState" className="form-control">
+        <option defaultValue>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div className="form-group col-md-2">
+      <label htmlFor="inputZip">Zip</label>
+      <input type="text" className="form-control" id="inputZip"/>
+    </div>
+  </div>
+  <div className="form-group">
+    <div className="form-check">
+      <input className="form-check-input" type="checkbox" id="gridCheck"/>
+      <label className="form-check-label" htmlFor="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+</form>
+      </div>
+      <div className="modal-footer">
+        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" className="btn btn-primary" data-bs-dismiss="modal" onClick={Redirect}>Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
         </div>
         <NotificationContainer />
         </div>

@@ -5,7 +5,6 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import {HashRouter as Router,Route } from 'react-router-dom'
 import Home from './components/Home'
 import MenContainer from './containers/MenContainer';
-import Kids from './components/Kids';
 import CartContainer from './containers/CartContainer';
 import NavbarContainer from './containers/NavbarContainer';
 import About from './components/About';
