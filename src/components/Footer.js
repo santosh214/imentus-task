@@ -7,7 +7,7 @@ export default function Footer() {
             <div className="container">
                 <div className="row">
                     <div className="col-xl-6 col-lg-6 text-center text-lg-left">
-                        <div className="copyright-text">
+                        <div className="copyright-text mt-2">
                             <p>Copyright &copy; 2021, All Right Reserved <a href="https://github.com/santosh214">Imentus</a></p>
                         </div>
                     </div>

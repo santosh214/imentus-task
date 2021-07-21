@@ -1,6 +1,14 @@
 import React from 'react'
 import Footer from './Footer'
+import 'react-notifications/lib/notifications.css';
+import {NotificationContainer, NotificationManager} from 'react-notifications';
+
+
 export default function Men(props) {
+    function Notification(){
+        NotificationManager.success('Add items in Your cart','Add')
+    }
+    
     console.warn("menprops",props)
     const men=[
         {id:'m1',company:"MUFTI",price:1700,desc:"Checks Cotton Slim Fit Mens Casual Shirt",img:"assets/men/men1.jpg"},
@@ -43,7 +51,7 @@ export default function Men(props) {
                                 </div>
                                 {/* <!-- Product actions--> */}
                                 <div className="card-footer p-2 pt-0 border-top-0 bg-transparent">
-                                    <div className="text-center"><button className="btn btn-outline-dark mt-auto btn-sm" onClick={()=>props.addToCartHandler({img:items.img,desc:items.desc,price:items.price,id:items.id})}>Add to cart</button></div>
+                                    <div className="text-center"><button className="btn btn-outline-dark mt-auto btn-sm" onClick={()=>{props.addToCartHandler({img:items.img,desc:items.desc,price:items.price,id:items.id});Notification();}}>Add to cart</button></div>
                                 </div>
                             </div>
 
@@ -54,6 +62,8 @@ export default function Men(props) {
 </div>
                 </div>
             </section>
+            <NotificationContainer />
+
             <Footer/>
         </div>
     )
