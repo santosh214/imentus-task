@@ -12,14 +12,14 @@ export default function Kids(props) {
 
     console.log("kidsProps",props)
     const kids = [
-        {id:'k1',  company: "Mango", price: 100, desc: "Printed Cotton Round Neck Boys T-shirt", img: "assets/kids/kids1.jpg" },
-        {id:'k2', company: "Mango", price: 200, desc: "Printed Cotton Round Neck Girls T-shirt", img: "assets/kids/kids2.jpg" },
-        {id:'k3', company: "Mango", price: 180, desc: "Boys Printed T-shirt Military Style", img: "assets/kids/kids3.jpg" },
-        {id:'k4', company: "Mango", price: 300, desc: "Printed Viscose Regular Girl's Jumpsuit", img: "assets/kids/kids13.jpg" },
-        {id:'k5', company: "Mango", price: 559, desc: "Solid Cotton Blend Girls Casual Dress", img: "assets/kids/kids4.jpg" },
-        {id:'k6', company: "Mango", price: 699, desc: "Solid Cotton Rich Girls Dungarees", img: "assets/kids/kids5.jpg" },
-        {id:'k7', company: "Mango", price: 279, desc: "Boys Printed T-Shirt", img: "assets/kids/kids6.jpg" },
-        {id:'k8', company: "Mango", price: 199, desc: "Printed Cotton Round Neck Girls T-Shirt", img: "assets/kids/kids7.jpg" },
+        {id:'k1',  company: "Mango", price: 100, desc: "Printed Cotton Round Neck Boys T-shirt", img: "https://santosh214.github.io/imentus-task/assets/kids/kids1.jpg" },
+        {id:'k2', company: "Mango", price: 200, desc: "Printed Cotton Round Neck Girls T-shirt", img: "https://santosh214.github.io/imentus-task/assets/kids/kids2.jpg" },
+        {id:'k3', company: "Mango", price: 180, desc: "Boys Printed T-shirt Military Style", img: "https://santosh214.github.io/imentus-task/assets/kids/kids3.jpg" },
+        {id:'k4', company: "Mango", price: 300, desc: "Printed Viscose Regular Girl's Jumpsuit", img: "https://santosh214.github.io/imentus-task/assets/kids/kids13.jpg" },
+        {id:'k5', company: "Mango", price: 559, desc: "Solid Cotton Blend Girls Casual Dress", img: "https://santosh214.github.io/imentus-task/assets/kids/kids4.jpg" },
+        {id:'k6', company: "Mango", price: 699, desc: "Solid Cotton Rich Girls Dungarees", img: "https://santosh214.github.io/imentus-task/assets/kids/kids5.jpg" },
+        {id:'k7', company: "Mango", price: 279, desc: "Boys Printed T-Shirt", img: "https://santosh214.github.io/imentus-task/assets/kids/kids6.jpg" },
+        {id:'k8', company: "Mango", price: 199, desc: "Printed Cotton Round Neck Girls T-Shirt", img: "https://santosh214.github.io/imentus-task/assets/kids/kids7.jpg" },
       ]
     return (
         <div>
