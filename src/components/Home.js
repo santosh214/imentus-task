@@ -16,13 +16,13 @@ export default function Home() {
                     </div>
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img src="assets/carousel/carousel1.jpg" className="d-block w-100 h-100" alt="..." />
+                            <img src="https://santosh214.github.io/imentus-task/assets/carousel/carousel1.jpg" className="d-block w-100 h-100" alt="..." />
                         </div>
                         <div className="carousel-item">
-                           <Link to="/men"> <img src="assets/carousel/carousel2.jpg" className="d-block w-100 h-100" alt="..." /></Link>
+                           <Link to="/men"> <img src="https://santosh214.github.io/imentus-task/assets/carousel/carousel2.jpg" className="d-block w-100 h-100" alt="..." /></Link>
                         </div>
                         <div className="carousel-item">
-                                   <Link to="/kids"> <img src="assets/carousel/carousel4.jpg" className="d-block w-100 h-100" alt="..." /></Link>
+                                   <Link to="/kids"> <img src="https://santosh214.github.io/imentus-task/assets/carousel/carousel4.jpg" className="d-block w-100 h-100" alt="..." /></Link>
                         </div>
                     </div>
                     <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
